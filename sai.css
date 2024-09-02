@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+  background-image: url("poki1.jpg");
+  background-size:cover;
+  background-position:center;
+
+}
+.container{
+    background:transparent;
+    backdrop-filter: blur (20px);
+    box-shadow: 0 0 10px black;
+        margin:6%;
+        padding:6%;
+        border: 2px solid;
+        border-radius: 10px;
+        color: white;
+        border: none;
+    
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 30px;
+}
+.container nav ul{
+    display: flex;
+
+    gap: 3rem;
+}
+.container nav ul li{
+    list-style: none;
+    
+}
+.container nav a {
+    color: rgb(233, 37, 37);
+    text-decoration: none;
+}
+.container nav ul li:hover{
+    
+    background-color: rgb(33, 219, 114);
+   border-radius: 7%;
+}
+
+.matter{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.matter .concept{
+    color: rgb(20, 10, 10);
+   
+   
+}
+.matter .concept h1{
+   font-size: 27px;
+}
+.matter .concept p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.matter .image{
+    height: 300px;
+}
+.matter .image img{
+    height: 200px;
+    margin-top: 50px;
+    
+}
+.matter .image img:hover{
+    width: 320px;
+    height: 340px;
+}
+@media only screen and (max-width:600px){
+    nav{
+       width: 100px;
+      gap: 0.2rem;
+     
+    }
+    nav a{
+        font-size: 19px;
+        display: flex;
+    }
+    .matter{
+        flex-direction: column-reverse;
+    }
+    .matter .concept{
+        font-size: 13px;
+    }
+}
